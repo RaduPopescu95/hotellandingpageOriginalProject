@@ -1,25 +1,25 @@
 .myNav {
-  background-color: gray;
-  opacity: 0.55;
-}
-
-.myNav:hover {
-  opacity: 1;
+  opacity: 0.9;
   box-shadow: 0px 2px 0px black;
+  background-color: white !important;
 }
 
 .titlu {
-  font-size: 4rem;
-  color: aqua;
+  bont-size: 4rem;
+
+  padding-right: 0.5rem;
+  border-right: 3px solid black !important;
 }
 
 .linkuri {
-  color: aliceblue;
+  font-size: 1.1rem;
   /* margin-left: 5rem; */
 }
 
 .collaps {
-  background-color: gray !important;
+  opacity: 0.9;
+
+  background-color: white !important;
 }
 
 /* .linkuri:hover {
@@ -52,6 +52,7 @@ nav ul li a {
 .linkuri {
   position: relative;
   z-index: 1;
+  color: black !important;
 }
 .linkuri:hover {
   color: black !important;
