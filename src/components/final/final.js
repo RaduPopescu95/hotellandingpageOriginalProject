@@ -27,7 +27,7 @@ export default class final extends Component {
 
  render() {
   return (
-   <div>
+   <React.Fragment>
             <Navbar/>
     
              <div  id = "modal"></div>
@@ -363,7 +363,7 @@ export default class final extends Component {
         </footer>
 
 
-   </div>
+   </React.Fragment>
   )
  }
 }
