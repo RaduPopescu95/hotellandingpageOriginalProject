@@ -1,14 +1,20 @@
 
 import Final from './components/final/final';
-import Renders from './components/DinamicRenders/renders';
+import Movies from './components/Movies/movies';
+
+
+
+
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
    
+   
+    <Movies/>
     
-    <Renders/>
    
     </div>
   );

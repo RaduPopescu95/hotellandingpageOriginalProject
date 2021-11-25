@@ -1,0 +1,56 @@
+.col-container{
+  position: relative;
+  width: 50%;
+  cursor: pointer;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.images {
+  overflow: hidden;
+}
+.images {
+  transition: var(--transition);
+  width: 20rem;
+  margin-right: 0 !important;
+}
+
+
+
+
+.text {
+  color: black;
+  position: absolute;
+  opacity: 0;
+  font-size: 20px; 
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+
+
+.col-container:hover .images{
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.col-container:hover .text {
+  opacity: 1;
+}
+
