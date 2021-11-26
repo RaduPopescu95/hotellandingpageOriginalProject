@@ -5,9 +5,12 @@ import Footer from './footer/Footer'
 export default class Camere extends Component {
  render() {
   return (
+<React.Fragment>
+     <img class="hero__image" src="images/galeri.jpg" alt="" /> 
+     {/* image css from galerie css */}
    <section className = "rooms sec-width" id = "rooms">
             <div className = "title">
-                <h2>rooms</h2>
+                <h2>camere</h2>
             </div>
             <div className = "rooms-container">
                 {/* single room */}
@@ -102,9 +105,9 @@ export default class Camere extends Component {
                 {/* end of single room  */}
             </div>
 
-            <Footer/>
+            
         </section>
-
+</React.Fragment>
 
   )
  }

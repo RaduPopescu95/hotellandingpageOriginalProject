@@ -1,74 +1,93 @@
-import React, { Component } from 'react'
-import './Footer.css'
 
-export default class Footer extends Component {
- render() {
+
+import React from "react";
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  RedditShareButton,
+  RedditIcon,
+  LinkedinShareButton,
+  LinkedinIcon
+} from "react-share";
+import './Footer.css';
+
+const Footer = () => {
   return (
-  <footer className = "footer">
-            <div className = "footer-container">
-                <div>
-                    <h2>About Us </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sapiente mollitia doloribus provident? Eos quisquam aliquid vel dolorum, impedit culpa.</p>
-                    <ul className = "social-icons">
-                        <li className = "flex">
-                            <i className = "fab fa-twitter fa-2x"></i>
-                        </li>
-                        <li className = "flex">
-                            <i className = "fab fa-facebook fa-2x"></i>
-                        </li>
-                        <li className = "flex">
-                            <i className = "fab fa-instagram fa-2x"></i>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h2>Useful Links</h2>
-                    <a href = "#">Blog</a>
-                    <a href = "#">Rooms</a>
-                    <a href = "#">Subscription</a>
-                    <a href = "#">Gift Card</a>
-                </div>
-
-                <div>
-                    <h2>Privacy</h2>
-                    <a href = "#">Career</a>
-                    <a href = "#">About Us</a>
-                    <a href = "#">Contact Us</a>
-                    <a href = "#">Services</a>
-                </div>
-
-                <div>
-                    <h2>Have A Question</h2>
-                    <div className = "contact-item">
-                        <span>
-                            <i className = "fas fa-map-marker-alt"></i>
-                        </span>
-                        <span>
-                            203 Fake St.Mountain View, San Francisco, California, USA
-                        </span>
-                    </div>
-                    <div className = "contact-item">
-                        <span>
-                            <i className = "fas fa-phone-alt"></i>
-                        </span>
-                        <span>
-                            +84545 37534 48
-                        </span>
-                    </div>
-                    <div className = "contact-item">
-                        <span>
-                            <i className = "fas fa-envelope"></i>
-                        </span>
-                        <span>
-                            info@domain.com
-                        </span>
-                    </div>
-                </div>
+    <div className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="d-flex">
+              <p>Romania, Targoviste, Street Soroca, 130128</p>
             </div>
-        </footer>
-
-
+            <div className="d-flex">
+              <a href="tel:555-555-555">0787813831</a>
+            </div>
+            <div className="d-flex">
+              <p>radu.p1995@yahoo.com</p>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-2 col-sm-6">
+            <div className="row">
+              <div className="col">
+                <a className="footer-nav">Home</a>
+                <br />
+                <a className="footer-nav">About me</a>
+                <br />
+                <a className="footer-nav">Services</a>
+              </div>
+              <div className="col">
+                <a className="footer-nav">Experience</a>
+                <br />
+                <a className="footer-nav">Portfolio</a>
+                <br />
+                <a className="footer-nav">Contacts</a>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+            <div className="d-flex justify-content-center">
+              <FacebookShareButton
+                url={"https://www.youtube.com/8020coding"}
+                quote={"FullStack Developer"}
+                hashtag="#javascript"
+              >
+                <FacebookIcon className="mx-3" size={36} />
+              </FacebookShareButton>
+              <TwitterShareButton
+                url={"https://www.youtube.com/8020coding"}
+                quote={"FullStack Developer"}
+                hashtag="#javascript"
+              >
+                <TwitterIcon className="mx-3" size={36} />
+              </TwitterShareButton>
+              <RedditShareButton
+                url={"https://www.youtube.com/8020coding"}
+                quote={"FullStack Developer"}
+                hashtag="#javascript"
+              >
+                <RedditIcon className="mx-3" size={36} />
+              </RedditShareButton>
+              <LinkedinShareButton
+                url={"https://www.youtube.com/8020coding"}
+                quote={"FullStack Developer"}
+                hashtag="#javascript"
+              >
+                <LinkedinIcon className="mx-3" size={36} />
+              </LinkedinShareButton>
+            </div>
+            <p className="pt-3 text-center">
+              Copyright&copy;
+              {new Date().getFullYear()}&nbsp;Popescu Radu-Adrian | All Rights Reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   )
- }
 }
+
+export default Footer;
+

@@ -5,15 +5,14 @@ import Servicii from './servicii/Servicii'
 import Footer from './footer/Footer'
 import Slider1 from './gallery/Slider1'
 
+
 export default class Pensiune extends Component {
  render() {
   return (
    <div>
-    <Navbar/>
     <Header/>
     <Servicii/>
     <Slider1/>
-    <Footer/>
    </div>
   )
  }

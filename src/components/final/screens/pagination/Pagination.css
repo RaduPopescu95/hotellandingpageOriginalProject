@@ -1,0 +1,19 @@
+
+
+.page{
+ pointer:cursor;
+    border-radius: 50%;
+}
+
+.page-link {
+  z-index: 3;
+
+
+ border-radius: 30%;
+}
+
+.page-link:hover{
+
+
+
+}

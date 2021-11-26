@@ -9,7 +9,7 @@ export default class Slider1 extends Component {
   return (
   <div>
    <Container className="">
-    <Row className="my-3 container-row">
+    <Row className="mb-4 container-row">
    
       {/* <Link to={`/product/`}> */}
       {ImageData.map((img, key) => {
