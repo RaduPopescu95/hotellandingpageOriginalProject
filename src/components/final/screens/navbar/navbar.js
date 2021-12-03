@@ -21,7 +21,7 @@ render(){
       <Link className="mx-4 linkuri" to="/camere" >Camere</Link>
       <Link className="mx-4 linkuri" to="/galerie" >Galerie</Link>
       <Link className="mx-4 linkuri" to="/" href="#pricing">Pricing</Link>
-      <Link className="mx-4 linkuri" to="/" href="#pricing">Pricing</Link>
+      <Link className="mx-4 linkuri" to="/book" href="#pricing">Booking</Link>
     </Nav>
     </Navbar.Collapse>
     </Container>

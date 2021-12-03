@@ -5,8 +5,8 @@ import { Pagination } from 'react-bootstrap';
 import { propTypes } from 'react-bootstrap/esm/Image';
 
 
-const pagination = props => {
- const {onPageChange, itemsCount, pageSize, currentPage} = props;
+const pagination = ({onPageChange, itemsCount, pageSize, currentPage}) => {
+ 
  const pageTotal = Math.ceil(itemsCount/pageSize);
 //  if (pageTotal === 1) return null;
  const pages=_.range(1, pageTotal + 1);

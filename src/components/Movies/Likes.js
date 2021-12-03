@@ -4,10 +4,10 @@ import React, { Component } from 'react'
 //output: onClick
 
 export default function Likes(props){
- 
+ const toggleLike = props.onToggleLike;
  return (
    <React.Fragment>
-    <i onClick={props.onToggleClick} style={{cursor:'pointer'}} className={props.liked ? "fas fa-heart fa-lg" : "far fa-heart fa-lg"}></i>
+    <i onClick={toggleLike} style={{cursor:'pointer'}} className={props.liked ? "fas fa-heart fa-lg" : "far fa-heart fa-lg"}></i>
    </React.Fragment>
   )
 

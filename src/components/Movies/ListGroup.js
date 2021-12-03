@@ -2,16 +2,16 @@ import React from 'react'
 import { ListGroup } from 'react-bootstrap';
 // import { getGenres } from '../../services/fakeGenreService';
 
-const listGroup = props => {
- const {onGenreChange, onGenreSelect, myGenres, textProperty, valueProperty} = props;
+const listGroup = ({onGenreSelect, myGenres, textProperty, valueProperty, selectedGen}) => {
+
  // const getMyGenres = genres;
  // const genres = getGenres();
 
  return(
  <React.Fragment>
    <ul className="list-group">
-    {myGenres.map(g => (
-     <button type="button" key={g[valueProperty]} className="list-group-item list-group-item-action" onClick={() => onGenreChange(g)}>{g[textProperty]}</button>
+    {myGenres.map(gen => (
+     <button type="button" key={gen[valueProperty]} className={gen === selectedGen ? "list-group-item list-group-item-action active" : "list-group-item list-group-item-action" } onClick={() => onGenreSelect(gen)}>{gen[textProperty]}</button>
      ))}      
    </ul>
  </React.Fragment>
@@ -20,7 +20,7 @@ const listGroup = props => {
 
 };
 
-ListGroup.defaultProps = {
+listGroup.defaultProps = {
    textProperty: "name",
    valueProperty: "_id"
 };

@@ -4,7 +4,7 @@ import './Pagination.css'
 
 function Pagionation() {
  return (
-  <Pagination  className="pag mb-5 justify-content-center">
+  <Pagination size="lg" className="pag mb-5 justify-content-center">
   {/* <Pagination.First /> */}
   {/* <Pagination.Prev /> */}
  
