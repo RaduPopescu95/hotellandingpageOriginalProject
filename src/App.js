@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 import './App.css'
-// import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-// import Pensiune from './components/final/screens/Pensiune'
-// import Camere from './components/final/screens/Camere'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Pensiune from './components/final/screens/Pensiune'
+import Camere from './components/final/screens/Camere'
 
-// import Navbar from './components/final/screens/navbar/navbar';
-// import Booking from './components/final/screens/booking/booking'
+import Navbar from './components/final/screens/navbar/navbar';
+import Booking from './components/final/screens/booking/booking';
+import PageNotFound from './components/final/screens/PageNotFound/PageNotFound';
 
-// import header from './components/final/screens/header/header';
-// import Slider1 from './components/final/screens/gallery/Slider1';
-// import Footer from './components/final/screens/footer/Footer';
-// import Galerie from './components/final/screens/Galerie';
-// import ContactBook from './components/final/screens/ContactBook';
+import header from './components/final/screens/header/header';
+import Slider1 from './components/final/screens/gallery/Slider1';
+import Footer from './components/final/screens/footer/Footer';
+import Galerie from './components/final/screens/Galerie';
+import ContactBook from './components/final/screens/ContactBook';
 
-import Movies from './components/Movies/movies'
+// import Movies from './components/Movies/movies'
 
 export default class App extends Component {
 
@@ -35,21 +36,22 @@ export default class App extends Component {
 
   render(){
       return (
-      // <Router>  
-      //   <Navbar/>
-      //   <div>
-      //     <Routes>
-      //       <Route path="/" element={<Pensiune/>} exact/>
-      //       <Route path="/camere" element={<Camere/>} exact/>
-      //       <Route path="/galerie" element={<Galerie/>} exact/>
-      //       <Route path="/book" element={<ContactBook/>} exact/>
-      //     </Routes>
-      //   </div>
-      //   <Footer/>
-      // </Router>
-      <React.Fragment>
-        <Movies/>
-      </React.Fragment>
+      <Router>  
+        <Navbar/>
+        <div>
+          <Routes>
+            <Route path="/" element={<Pensiune/>} exact/>
+            <Route path="/camere" element={<Camere/>} exact/>
+            <Route path="/galerie" element={<Galerie/>} exact/>
+            <Route path="/book" element={<ContactBook/>} exact/>
+            <Route path="*"element={<PageNotFound/>}/>
+          </Routes>
+        </div>
+        <Footer/>
+      </Router>
+      // <React.Fragment>
+      //   <Movies/>
+      // </React.Fragment>
       );
     }
 }
